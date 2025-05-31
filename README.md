@@ -1,26 +1,37 @@
-# RubTL - Ultimate Rubika Library
+# RubTL - The Ultimate Rubika Library
 ![RubTL Version](https://img.shields.io/badge/version-7.0.0-blue.svg)
-![Python Version](https://img.shields.io/badge/python-3.8%2B-green.svg)
-![License](https://img.shields.io/badge/license-MIT-red.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-yellow.svg)
 
 <div align="center">
-  <img src="assets/rubtl_logo.png" alt="RubTL Logo" width="200"/>
+  <img src="assets/rubtl_logo.png" width="200" alt="RubTL Logo">
   
-  **The Most Advanced Rubika Library with Telegram-Like Features**
+  **Created by: [@mohammadrmmr2003](https://github.com/mohammadrmmr2003)**
   
-  *Created by [@mohammadrmmr2003](https://github.com/mohammadrmmr2003)*
+  *Last Update: 2025-05-31 03:33:50 UTC*
 </div>
 
 ## 🚀 Features
-- ✨ Advanced Message Handling
-- 🔒 Multi-Layer Security
-- 📊 Smart Cache System
-- 🎵 Voice Call Support
-- 🤖 Inline Mode & Callbacks
-- 📸 Media Processing
+- 💬 Complete Message Handling
 - 👥 Advanced Group Management
-- 💫 Telegram-Like Features
+- 🎵 Voice Call System
+- 📸 Media Processing
+- ⚡️ Inline Mode Support
+- 🔒 High Security
+- ⚙️ Multi-Core Processing
+- 💾 Smart Caching System
 
-## 📥 Installation
+## 📋 Requirements
+- Python 3.8 or higher
+- Required packages listed in `requirements.txt`
+
+## 🔧 Installation
 ```bash
-pip install rubtl
+# Clone the repository
+git clone https://github.com/mohammadrmmr2003/RubTL.git
+
+# Change directory
+cd RubTL
+
+# Install requirements
+pip install -r requirements.txt
