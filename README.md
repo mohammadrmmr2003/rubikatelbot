@@ -1,138 +1,177 @@
 <div align="center">
-  
-# RubTL - The Ultimate Rubika Library
 
-<img src="assets/rubtl_logo.png" width="200" alt="RubTL Logo">
+<img src="https://i.imgur.com/8cT6xnj.png" width="200" height="200" alt="RubTL Logo">
 
-[![RubTL Version](https://img.shields.io/badge/version-7.0.0-blue.svg)](https://github.com/mohammadrmmr2003/RubTL/releases)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-yellow.svg)](https://www.python.org/downloads/)
-[![GitHub Stars](https://img.shields.io/github/stars/mohammadrmmr2003/RubTL?style=social)](https://github.com/mohammadrmmr2003/RubTL/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/mohammadrmmr2003/RubTL?style=flat-square)](https://github.com/mohammadrmmr2003/RubTL/issues)
+# 🌟 RubTL - The Ultimate Rubika Library
 
-**A powerful and feature-rich Python library for Rubika**
+[![RubTL Version](https://img.shields.io/badge/RubTL-v7.0.0-blue?style=for-the-badge&logo=python&logoColor=white)](https://github.com/mohammadrmmr2003/RubTL/releases)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/mohammadrmmr2003/RubTL?style=for-the-badge&logo=github)](https://github.com/mohammadrmmr2003/RubTL/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/mohammadrmmr2003/RubTL?style=for-the-badge&logo=github)](https://github.com/mohammadrmmr2003/RubTL/issues)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge&logo=github)](CONTRIBUTING.md)
 
-[Features](#-features) • [Installation](#-installation) • [Requirements](#-requirements) • [Documentation](#-documentation) • [Support](#-support)
+<p align="center">
+  <b>A Modern, Fast, and Powerful Python Library for Rubika</b>
+</p>
 
-*Created by [@mohammadrmmr2003](https://github.com/mohammadrmmr2003)*  
-*Last Update: 2025-05-31 03:33:50 UTC*
+[📚 Documentation](docs/) |
+[💡 Examples](examples/) |
+[🤝 Contributing](CONTRIBUTING.md) |
+[📢 Telegram Channel](https://t.me/RubTL) |
+[💬 Discussions](https://github.com/mohammadrmmr2003/RubTL/discussions)
 
 </div>
 
-## 📌 Overview
+---
 
-RubTL is a comprehensive Python library designed to simplify Rubika bot development. With its powerful features and intuitive API, you can create sophisticated Rubika bots with minimal effort.
+## 📋 Table of Contents
+- [Overview](#-overview)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Requirements](#-requirements)
+- [Quick Start](#-quick-start)
+- [Examples](#-examples)
+- [Documentation](#-documentation)
+- [Support](#-support)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
-## 🚀 Features
+## 🌈 Overview
 
-<table>
-<tr>
-<td>
+**RubTL** is a state-of-the-art Python library that revolutionizes Rubika bot development. Built with performance, security, and ease of use in mind, it provides developers with powerful tools to create sophisticated Rubika bots effortlessly.
 
-### Core Features
-- 💬 **Complete Message Handling**
-  - Real-time message processing
-  - Advanced text formatting
-  - Multi-language support
-  
-- 👥 **Advanced Group Management**
-  - Smart member management
-  - Automated moderation
-  - Custom permission systems
+<details>
+<summary>🌟 Why Choose RubTL?</summary>
 
-- 🎵 **Voice Call System**
-  - High-quality voice calls
-  - Audio streaming support
-  - Call management features
+- 🚀 **High Performance**: Optimized for speed and efficiency
+- 🛡️ **Security First**: Built-in protection against common threats
+- 🎯 **Easy to Use**: Intuitive API design
+- 📚 **Well Documented**: Comprehensive guides and examples
+- 🤝 **Active Community**: Regular updates and support
+</details>
 
-</td>
-<td>
+## ⚡ Features
 
-### Additional Features
-- 📸 **Media Processing**
-  - Image manipulation
-  - Video processing
-  - File handling
-  
-- ⚡️ **Inline Mode Support**
-  - Quick actions
-  - Interactive buttons
-  - Dynamic responses
+<div align="center">
 
-- 🔒 **Security Features**
-  - End-to-end encryption
-  - Anti-spam protection
-  - Secure authentication
+| Core Features | Advanced Features | Security Features |
+|:------------:|:----------------:|:----------------:|
+| 💬 Complete Message Handling | 📸 Media Processing | 🔐 End-to-End Encryption |
+| 👥 Group Management | ⚡️ Inline Mode | 🛡️ Anti-Spam Protection |
+| 🎵 Voice Call System | 🤖 Bot API Support | 🔒 Secure Authentication |
+| 📊 Analytics | 🌐 Multi-Language | 🔑 API Key Management |
 
-</td>
-</tr>
-</table>
+</div>
 
-## 💻 Technical Features
+### 🎯 Technical Highlights
 
-- ⚙️ **Multi-Core Processing**
-  - Efficient resource utilization
-  - Parallel task execution
-  - Optimized performance
+```python
+# Simple bot example
+from rubtl import Bot, Message
 
-- 💾 **Smart Caching System**
-  - Reduced API calls
-  - Faster response times
-  - Memory optimization
+bot = Bot("YOUR_API_KEY")
+
+@bot.on_message()
+async def echo(message: Message):
+    await message.reply("Hello from RubTL! 👋")
+
+bot.run()
+```
+
+## 🚀 Installation
+
+```bash
+# Using pip
+pip install rubtl
+
+# Using git (for latest development version)
+git clone https://github.com/mohammadrmmr2003/RubTL.git
+cd RubTL
+pip install -r requirements.txt
+```
 
 ## 📋 Requirements
 
-- Python 3.8 or higher
-- Required packages:
-  ```text
-  requests>=2.26.0
-  cryptography>=3.4.7
-  pillow>=8.3.1
-  aiohttp>=3.8.1
-  ```
+<details>
+<summary>View Requirements</summary>
 
-## 🔧 Installation
+```toml
+# Core Dependencies
+python >= "3.8"
+aiohttp >= "3.8.1"
+cryptography >= "3.4.7"
+pillow >= "8.3.1"
+requests >= "2.26.0"
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/mohammadrmmr2003/RubTL.git
-   ```
+# Optional Dependencies
+numpy >= "1.21.0"  # For advanced media processing
+opencv-python >= "4.5.3.56"  # For computer vision features
+```
+</details>
 
-2. **Navigate to the project directory:**
-   ```bash
-   cd RubTL
-   ```
+## 🚀 Quick Start
 
-3. **Install required packages:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+1️⃣ **Install RubTL**
+```bash
+pip install rubtl
+```
+
+2️⃣ **Create Your First Bot**
+```python
+from rubtl import Bot
+
+bot = Bot("YOUR_API_KEY")
+
+@bot.on_start()
+async def on_start():
+    print("Bot is running! 🚀")
+
+bot.run()
+```
 
 ## 📖 Documentation
 
-Coming soon! Comprehensive documentation will be available at [docs.rubtl.com](https://docs.rubtl.com).
+Visit our [Documentation Portal](https://docs.rubtl.com) for:
+- 📚 Comprehensive API Reference
+- 🎓 Tutorials and Guides
+- 💡 Code Examples
+- 🔧 Troubleshooting Tips
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
+We welcome contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for:
+- 🐛 Bug Reports
+- 💡 Feature Requests
+- 🔧 Pull Requests
+- 📝 Documentation Improvements
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+RubTL is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🌟 Support
+## 💖 Support
 
-- Star this repository
-- Report issues
-- Submit pull requests
-- Follow updates
+- ⭐ Star this repository
+- 🐛 Report issues
+- 🤝 Submit pull requests
+- 📢 Share with others
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [@mohammadrmmr2003](https://github.com/mohammadrmmr2003)**
+### 📊 Project Stats
 
-[⬆ Back to Top](#rubtl---the-ultimate-rubika-library)
+[![GitHub Release](https://img.shields.io/github/v/release/mohammadrmmr2003/RubTL?style=for-the-badge&logo=github)](https://github.com/mohammadrmmr2003/RubTL/releases)
+[![PyPI Version](https://img.shields.io/pypi/v/rubtl?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/rubtl/)
+[![GitHub Downloads](https://img.shields.io/github/downloads/mohammadrmmr2003/RubTL/total?style=for-the-badge&logo=github)](https://github.com/mohammadrmmr2003/RubTL/releases)
+
+**Created with ❤️ by [Mohammad Ramezani (@mohammadrmmr2003)](https://github.com/mohammadrmmr2003)**
+
+<sub>Last Updated: 2025-05-31 03:44:11 UTC</sub>
+
+[⬆️ Back to Top](#-rubtl---the-ultimate-rubika-library)
 
 </div>
